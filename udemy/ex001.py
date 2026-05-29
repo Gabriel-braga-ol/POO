@@ -7,7 +7,7 @@
 # classes.
 
 # __init__ - inicializar os atributos da classe - sempre retorna None
-# Funções dentro de classes são chamadas de métodos
+# Funções dentro de classes são chamadas de métodos (Funções associadas as classes)
 
 # string = 'Luiz'  # str
 # print(string.upper())
