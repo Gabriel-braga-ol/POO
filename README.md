@@ -11,3 +11,11 @@ Introdução a programação orientadada a objetos
 
 ![alt text](image.png)
 
+- Dunder atributte
+    __class__
+    __dict__
+    __doc__
+
+- Dunder method
+    __getstate__
+    __str__
