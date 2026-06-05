@@ -1,7 +1,7 @@
 from rich import print
 
 class Caneta:
-    def __init__(self, cor, destampada=False):
+    def __init__(self, cor):
         escolha = ''
         match cor.lower().strip():
             case 'azul':
@@ -10,18 +10,30 @@ class Caneta:
                 escolha = '[red]' 
             case 'verde':
                 escolha = '[green]'
-
-        self.caneta = cor
-        self.destampada = destampada
+            case _:
+                escolha = '[white]'
+        self.cor = escolha
+        self.tampada = True
 
     def escrever(self, msg):
-        print(f'{self.caneta}{msg}[/]', end='')
-        
+        if self.tampada:
+            print('A caneta está tampada')
+        else:
+            print(f'{self.cor}{msg}[/]', end='')
+
+    def tampar(self):
+        self.tampada == True
+            
     def destampar(self):
-        if not self.destampada:
-            print(f'A {self.caneta} está tampada')
-            return
+        self.tampada = False
         
 
 c1 = Caneta('azul')
+c2 = Caneta('vermelha')
+c3 = Caneta('verde')
+c1.destampar()
+c2.destampar()
+c3.destampar()
 c1.escrever('Olá, mundo!')
+c2.escrever('Funciona!')
+c3.escrever('Python!')

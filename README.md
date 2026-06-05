@@ -19,3 +19,24 @@ Introdução a programação orientadada a objetos
 - Dunder method
     __getstate__
     __str__
+
+- Os 4 pilares da POO
+    Abstração
+    Encapsulamento
+    Herança
+        Quando uma classe herda todos métodos e atributos de outra classe
+        - Superclasse 
+            Classe base, classe ancestral ou classe mãe
+        - Subclasse
+            Herda coisas da superclasse
+            Classe derivada, classe filha e descendente
+            Uma subclasse pode ser uma superclasse de outras classes
+        Vantagens:
+            - Reutilização de código
+            - Organização hierárquica
+            - Facilita a manutenção
+            - Extensibilidade
+            - Suporte a polimorfismo 
+            
+        Herançã é uma generalização
+    Polimorfismo
