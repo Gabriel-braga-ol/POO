@@ -15,8 +15,8 @@
 
 class Pessoa:
     def __init__(self, nome, sobrenome):
-        self.nome = nome
-        self.sobrenome = sobrenome
+        self.nome = nome            #atributos
+        self.sobrenome = sobrenome  #atributos
 
 p1 = Pessoa('Gabriel', 'Braga')
 # p1.nome = 'Gabriel'
