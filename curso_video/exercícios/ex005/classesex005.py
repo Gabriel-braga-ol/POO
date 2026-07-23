@@ -5,6 +5,7 @@ class Pessoa:
 
     def fazer_aniversario(self):
         self.idade += 1
+        print(f'{self.nome} acabou de fazer aniversário e agora tem {self.idade} anos')
 
 
 class Aluno(Pessoa):
@@ -26,10 +27,10 @@ class Professor(Pessoa):
         print(f'O professor {self.nome} acabou de dar aula')
 
 class Funcionario(Pessoa):
-    def __int__(self, nome, idade, cargo, setor):
+    def __init__(self, nome, idade, cargo, setor):
         super().__init__(nome, idade)
         self.cargo = cargo
         self.setor = setor
-    
+
     def bater_ponto(self):
-        print(f'A funcionário {self.nome} acabou de bater ponto')
+        print(f'A funcionária {self.nome} acabou de bater ponto')
