@@ -29,7 +29,7 @@ class Professor(Pessoa):
         print(f'O professor {self.nome} acabou de dar aula')
 
 class Funcionario(Pessoa):
-    def __int__(self, nome, idade, cargo, setor):
+    def __init__(self, nome, idade, cargo, setor):
         super().__init__(nome, idade)
         self.cargo = cargo
         self.setor = setor
